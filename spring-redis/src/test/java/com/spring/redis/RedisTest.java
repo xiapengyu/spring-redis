@@ -21,7 +21,8 @@ public class RedisTest {
     @Test
     public void testSet(){
         logger.info("插入redis>>[{}-{}]", "phone", "17688556401");
-        redisUtil.set("phone","17688556401");
+        redisUtil.set("phone","17688556401",3000);
+        logger.info("插入成功");
     }
 
     @Test
